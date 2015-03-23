@@ -1,0 +1,1387 @@
+/*
+Theme Name: My Underscores Theme
+Theme URI: https://github.com/lcormaw/
+Author: lcormaw
+Author URI: https://github.com/lcormaw/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: my-underscores-theme
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+My Underscores Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Typography
+3.0 Elements
+4.0 Forms
+5.0 Navigation
+	5.1 Links
+	5.2 Menus
+6.0 Accessibility
+7.0 Alignments
+8.0 Clearings
+9.0 Widgets
+10.0 Content
+	10.1 Posts and pages
+	10.2 Asides
+	10.3 Comments
+11.0 Infinite scroll
+12.0 Media
+	12.1 Captions
+	12.2 Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 Normalize
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* line 7, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+body {
+  margin: 0; }
+
+/* line 22, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 29, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+/* line 34, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 40, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+[hidden], template {
+  display: none; }
+
+/* line 44, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+a {
+  background-color: transparent; }
+
+/* line 49, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+a:active, a:hover {
+  outline: 0; }
+
+/* line 53, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 58, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+b, strong {
+  font-weight: bold; }
+
+/* line 62, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+dfn {
+  font-style: italic; }
+
+/* line 66, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 71, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 76, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+small {
+  font-size: 80%; }
+
+/* line 81, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 88, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+sup {
+  top: -0.5em; }
+
+/* line 92, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+sub {
+  bottom: -0.25em; }
+
+/* line 96, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+img {
+  border: 0; }
+
+/* line 100, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 104, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+figure {
+  margin: 1em 40px; }
+
+/* line 108, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 113, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+pre {
+  overflow: auto; }
+
+/* line 120, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 129, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 135, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+button {
+  overflow: visible; }
+
+/* line 140, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+button, select {
+  text-transform: none; }
+
+/* line 147, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+/* line 153, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/* line 158, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 163, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+input {
+  line-height: normal; }
+
+/* line 168, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 174, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 178, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+/* line 184, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 188, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 194, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 199, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+textarea {
+  overflow: auto; }
+
+/* line 203, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+optgroup {
+  font-weight: bold; }
+
+/* line 207, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 213, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/normalize */
+td, th {
+  padding: 0; }
+
+/*--------------------------------------------------------------
+ CUSTOM VARS * MIXINS
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+ STRUCTURE
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+ TYPOGRAPHY
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+ COLORS
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+/* line 5, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/typography/typography */
+body, button, input, select, textarea {
+  color: #505050;
+  font-family: Raleway, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.618em; }
+
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/typography/headings */
+h1, h2, h3, h4, h5, h6 {
+  clear: both; }
+
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/typography/copy */
+p {
+  margin-bottom: 1.5em; }
+
+/* line 5, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/typography/copy */
+dfn, cite, em, i {
+  font-style: italic; }
+
+/* line 9, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/typography/copy */
+blockquote {
+  margin: 0 1.5em; }
+
+/* line 13, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/typography/copy */
+address {
+  margin: 0 0 1.5em; }
+
+/* line 17, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/typography/copy */
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.618em;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em; }
+
+/* line 28, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/typography/copy */
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem; }
+
+/* line 33, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/typography/copy */
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+/* line 38, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/typography/copy */
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+/* line 43, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/typography/copy */
+big {
+  font-size: 125%; }
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/elements */
+html {
+  box-sizing: border-box; }
+
+/* line 7, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/elements */
+*, *:before, *:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit; }
+
+/* line 11, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/elements */
+body {
+  background: #ebe8e5
+  /* Fallback for when there is no custom background color defined. */ }
+
+/* line 15, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/elements */
+blockquote, q {
+  quotes: "" ""; }
+  /* line 19, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/elements */
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
+
+/* line 24, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/elements */
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/lists */
+ul, ol {
+  margin: 0 0 1.5em 3em; }
+
+/* line 5, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/lists */
+ul {
+  list-style: disc; }
+
+/* line 9, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/lists */
+ol {
+  list-style: decimal; }
+
+/* line 14, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/lists */
+li > ul, li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+/* line 19, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/lists */
+dt {
+  font-weight: bold; }
+
+/* line 23, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/lists */
+dd {
+  margin: 0 1.5em 1.5em; }
+
+/* line 33, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/elements */
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%
+  /* Adhere to container width. */ }
+
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/elements/tables */
+table {
+  margin: 0 0 1.5em;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+/* line 4, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/forms/buttons */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #e6e6e6;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.6em 1em 0.4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  /* line 16, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/forms/buttons */
+  button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+    border-color: #ccc #bbb #aaa;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+  /* line 22, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/forms/buttons */
+  button:active, button:focus, input[type="button"]:active, input[type="button"]:focus, input[type="reset"]:active, input[type="reset"]:focus, input[type="submit"]:active, input[type="submit"]:focus {
+    border-color: #aaa #bbb #bbb;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+
+/* line 6, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/forms/fields */
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px; }
+  /* line 11, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/forms/fields */
+  input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus {
+    color: #111; }
+
+/* line 20, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/forms/fields */
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
+  padding: 3px; }
+
+/* line 24, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/forms/fields */
+textarea {
+  padding-left: 3px;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/links */
+a {
+  color: #7b6e62; }
+  /* line 4, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/links */
+  a:visited {
+    color: #7b6e62; }
+  /* line 9, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/links */
+  a:hover, a:focus, a:active {
+    color: #7b6e62; }
+  /* line 12, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/links */
+  a:focus {
+    outline: thin dotted; }
+  /* line 16, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/links */
+  a:hover, a:active {
+    outline: 0; }
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+/* line 2, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+.main-navigation h1 {
+  display: none !important; }
+/* line 5, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  white-space: nowrap; }
+  /* line 11, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+  .main-navigation ul li {
+    cursor: pointer;
+    list-style: none;
+    display: block;
+    position: relative;
+    padding: 0
+    /* switch symbol for showing child */
+    /* nav child menu */
+    /* show child */ }
+    /* line 17, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+    .main-navigation ul li a {
+      display: inline-block; }
+    /* line 21, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+    .main-navigation ul li span {
+      display: inline-block;
+      text-align: right;
+      width: 1.4em;
+      padding-right: 0.5em;
+      margin-left: 0.5em;
+      margin-right: -0.5em; }
+    /* line 30, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+    .main-navigation ul li ul {
+      display: none;
+      padding: 0;
+      margin: 0; }
+    /* line 36, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+    .main-navigation ul li ul.childopen {
+      display: block; }
+
+/* expanded nav menu */
+@media (min-width: 72.433900206rem) {
+  /* line 46, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+  .navicon {
+    display: none; }
+
+  /* line 50, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+  .navmenu {
+    display: block; }
+
+  /* line 54, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+  .main-navigation ul {
+    float: right;
+    display: inline-table; }
+    /* line 58, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+    .main-navigation ul li {
+      float: left
+      /* expanded nav child menu */ }
+      /* line 60, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+      .main-navigation ul li a {
+        padding: 1.618rem; }
+      /* line 64, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+      .main-navigation ul li ul {
+        position: absolute;
+        z-index: 9999;
+        top: 100%;
+        left: 0;
+        background-color: #eae5e1;
+        border: 0.0625rem solid #e8e0da;
+        border-bottom: 0;
+        box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); }
+        /* line 70, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+        .main-navigation ul li ul li {
+          float: none; }
+          /* line 72, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+          .main-navigation ul li ul li a {
+            width: 100%;
+            line-height: 4.5rem;
+            padding: 0 2.1875rem; }
+          /* line 247, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+          .main-navigation ul li ul li a, .main-navigation ul li ul li a:link, .main-navigation ul li ul li a:visited {
+            border: 0;
+            border-top: 0.0625rem solid #e4dbd4; }
+          /* line 251, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+          .main-navigation ul li ul li a:hover {
+            background-color: #ece9e5; }
+ }
+
+/* collapsed nav menu */
+@media (max-width: 72.433900206rem) {
+  /* line 88, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+  .navicon {
+    float: right;
+    font-size: 1.65rem;
+    line-height: 2.8125rem;
+    text-align: center;
+    width: 3.375rem;
+    margin: 0.9375rem;
+    cursor: pointer; }
+
+  /* line 98, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+  .main-navigation ul {
+    clear: left;
+    display: none
+    /* collapsed nav child menu */ }
+    /* line 101, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+    .main-navigation ul.show {
+      display: block; }
+    /* line 105, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+    .main-navigation ul li a {
+      width: 100%;
+      line-height: 4.5rem;
+      padding: 0 2.1875rem;
+      border-top: 0.0625rem solid #e8e0da; }
+      /* line 258, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+      .main-navigation ul li a:hover {
+        border-bottom-color: transparent;
+        background-color: #eae5e1; }
+    /* line 113, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+    .main-navigation ul ul {
+      position: relative;
+      left: 0;
+      background-color: #e9e3dd; }
+      /* line 117, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+      .main-navigation ul ul li a {
+        border-top: 0.0625rem solid #e4dbd4; }
+        /* line 270, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+        .main-navigation ul ul li a:hover {
+          border-bottom-color: transparent;
+          background-color: #e7e0da; }
+ }
+
+/* line 127, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+.site-main .comment-navigation, .site-main .posts-navigation, .site-main .post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden; }
+
+/* line 134, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
+  float: left;
+  width: 50%; }
+
+/* line 141, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/navigation/menus */
+.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+/* line 2, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/modules/accessibility */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  /* line 11, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/modules/accessibility */
+  .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000
+    /* Above WP toolbar. */ }
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/modules/alignments */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+/* line 7, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/modules/alignments */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+/* line 13, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/modules/alignments */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+/* line 12, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/modules/clearings */
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after {
+  content: "";
+  display: table; }
+
+/* line 21, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/modules/clearings */
+.clear:after, .entry-content:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after {
+  clear: both; }
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/secondary/widgets */
+.widget {
+  margin: 0 0 1.5em
+  /* Make sure select elements fit in widgets. */ }
+  /* line 5, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/secondary/widgets */
+  .widget select {
+    max-width: 100%; }
+
+/* Search widget. */
+/* line 11, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/secondary/widgets */
+.widget_search .search-submit {
+  display: none; }
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/primary/posts-and-pages */
+.sticky {
+  display: block; }
+
+/* line 5, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/primary/posts-and-pages */
+.hentry {
+  margin: 0 0 1.5em; }
+
+/* line 10, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/primary/posts-and-pages */
+.byline, .updated:not(.published) {
+  display: none; }
+
+/* line 15, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/primary/posts-and-pages */
+.single .byline, .group-blog .byline {
+  display: inline; }
+
+/* line 21, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/primary/posts-and-pages */
+.page-content, .entry-content, .entry-summary {
+  margin: 1.5em 0 0; }
+
+/* line 25, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/primary/posts-and-pages */
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+/*--------------------------------------------------------------
+10.2 Asides
+--------------------------------------------------------------*/
+/* line 2, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/primary/asides */
+.blog .format-aside .entry-title, .archive .format-aside .entry-title {
+  display: none; }
+
+/*--------------------------------------------------------------
+10.3 Comments
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/primary/comments */
+.comment-content a {
+  word-wrap: break-word; }
+
+/* line 4, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/site/primary/comments */
+.bypostauthor {
+  display: block; }
+
+/*--------------------------------------------------------------
+11.0 Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 3, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/modules/infinite-scroll */
+.infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none; }
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+/* line 8, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/modules/infinite-scroll */
+.infinity-end.neverending .site-footer {
+  display: block; }
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+/* line 3, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/media */
+.page-content .wp-smiley, .entry-content .wp-smiley, .comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+/* Make sure embeds and iframes fit their containers. */
+/* line 13, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/media */
+embed, iframe, object {
+  max-width: 100%; }
+
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/captions */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+  /* line 5, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/captions */
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  /* line 9, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/captions */
+  .wp-caption .wp-caption-text {
+    margin: 0.8075em 0; }
+
+/* line 14, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/captions */
+.wp-caption-text {
+  text-align: center; }
+
+/*--------------------------------------------------------------
+12.2 Galleries
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/galleries */
+.gallery {
+  margin-bottom: 1.5em; }
+
+/* line 5, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/galleries */
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+  /* line 11, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/galleries */
+  .gallery-columns-2 .gallery-item {
+    max-width: 50%; }
+  /* line 15, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/galleries */
+  .gallery-columns-3 .gallery-item {
+    max-width: 33.33%; }
+  /* line 19, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/galleries */
+  .gallery-columns-4 .gallery-item {
+    max-width: 25%; }
+  /* line 23, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/galleries */
+  .gallery-columns-5 .gallery-item {
+    max-width: 20%; }
+  /* line 27, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/galleries */
+  .gallery-columns-6 .gallery-item {
+    max-width: 16.66%; }
+  /* line 31, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/galleries */
+  .gallery-columns-7 .gallery-item {
+    max-width: 14.28%; }
+  /* line 35, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/galleries */
+  .gallery-columns-8 .gallery-item {
+    max-width: 12.5%; }
+  /* line 39, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/galleries */
+  .gallery-columns-9 .gallery-item {
+    max-width: 11.11%; }
+
+/* line 44, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/media/galleries */
+.gallery-caption {
+  display: block; }
+
+/*--------------------------------------------------------------
+ CUSTOM STYLES
+--------------------------------------------------------------*/
+/* line 1, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+* {
+  box-sizing: border-box;
+  word-wrap: break-word; }
+
+/* line 6, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+body {
+  border-top: 0.125rem solid #DFD8CF;
+  background-color: #ebe8e5; }
+
+/* line 135, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted transparent; }
+
+/* line 139, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+a:hover, a:active {
+  border-bottom: 1px dotted #7b6e62; }
+
+/* line 12, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+blockquote {
+  padding: 1.618rem;
+  font-size: 1.25rem;
+  background-color: #ebe8e5;
+  border: 0.0625rem solid #e8e0da;
+  color: #76624e; }
+  /* line 148, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  blockquote a, blockquote a:visited, blockquote a:active {
+    color: inherit; }
+
+/* line 18, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+ul, ol {
+  padding: 0;
+  margin: 0 0 1.618em 1.618em; }
+
+/* line 74, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  line-height: 1.313em;
+  font-weight: 300; }
+
+/* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+h1 {
+  font-size: 3em;
+  margin: 0.563em 0; }
+
+/* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+h2 {
+  font-size: 2.25em;
+  margin: 0.625em 0; }
+
+/* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+h3 {
+  font-size: 1.5em;
+  margin: 1.313em 0; }
+
+/* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+h4 {
+  font-size: 1.313em;
+  margin: 1.313em 0; }
+
+/* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+h5 {
+  font-size: 1.125em;
+  margin: 1.313em 0; }
+
+/* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+h6 {
+  font-size: 1em;
+  margin: 0.75em 0; }
+
+/* line 26, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.content-area {
+  float: left;
+  margin: 0 -30% 0 0;
+  width: 100%; }
+
+/* line 32, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.site-main {
+  margin: 0 30% 0 0; }
+
+/* line 36, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.site-content .widget-area {
+  float: right;
+  overflow: hidden;
+  width: 30%; }
+
+/* line 42, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.site-footer {
+  clear: both;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+ CUSTOM STYLES
+--------------------------------------------------------------*/
+/* line 52, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.site {
+  padding-top: 0.809rem; }
+
+/* line 57, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.site-header {
+  max-width: 72.433900206rem;
+  margin: 0.809rem auto 1.618rem auto;
+  background-color: #ebe8e5;
+  border: 0.0625rem solid #e8e0da;
+  box-shadow: inset 0 0.125rem 0.3125rem rgba(194, 188, 184, 0.1);
+  color: #76624e; }
+  /* line 164, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  .site-header a, .site-header a:visited, .site-header a:active {
+    color: inherit; }
+
+/* line 64, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.site-branding {
+  padding-left: 1.618rem;
+  padding-top: 1.618rem;
+  padding-bottom: 1.618rem;
+  font-size: 0.5em;
+  float: left; }
+
+/* line 72, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.site-title {
+  font-weight: 700; }
+
+/* line 76, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.site-title, .site-description {
+  margin: 0;
+  line-height: 1em;
+  display: inline-block;
+  vertical-align: bottom; }
+
+/* line 83, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.site-description {
+  margin-left: 0.5em;
+  font-style: italic; }
+
+/* line 89, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.site-content {
+  max-width: 72.433900206rem;
+  margin: 1.618rem auto 0 auto; }
+
+/* line 97, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+  padding-left: 4.235801032rem;
+  padding-right: 4.235801032rem;
+  padding-top: 2.617924rem;
+  padding-bottom: 2.617924rem;
+  margin: 0 0 1.618rem 0;
+  background-color: #fff;
+  border: 0.0625rem solid #DFD8CF;
+  box-shadow: 0 0.0625rem 0.0625rem rgba(33, 19, 4, 0.07); }
+
+/* line 107, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.sticky {
+  border-width: 0.4375rem;
+  border-color: #ebe8e5;
+  box-shadow: 0 0.1875rem 0.375rem rgba(33, 19, 4, 0.15); }
+
+/* line 111, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.post-thumbnail {
+  margin-top: 1.618rem;
+  margin-right: -4.235801032rem;
+  margin-bottom: 1.618rem;
+  margin-left: -4.235801032rem;
+  border-top: 0.625rem solid #7b6e62;
+  border-bottom: 0.625rem solid #7b6e62; }
+  /* line 116, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .post-thumbnail img {
+    min-width: 100%;
+    vertical-align: bottom; }
+
+/* line 124, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.page-header .page-title {
+  text-align: center; }
+
+/* line 131, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.entry-content a img {
+  vertical-align: bottom; }
+/* line 189, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+.entry-content a, .entry-content a:link, .entry-content a:visited {
+  border-bottom: 0.0625rem dotted #7B6048;
+  background-color: #efedeb;
+  color: #505050; }
+/* line 194, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+.entry-content a:hover, .entry-content a:active {
+  background-color: #ebe8e5; }
+
+/* line 139, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.entry-header {
+  text-align: center; }
+
+/* line 143, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.entry-title {
+  margin-top: 0;
+  margin-bottom: 2.617924rem; }
+
+/* line 148, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.entry-meta {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 300;
+  padding: 0.8em 1.2em;
+  margin-bottom: 1.618rem;
+  background-color: #7b6e62;
+  color: #fff; }
+  /* line 180, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  .entry-meta a, .entry-meta a:visited, .entry-meta a:active {
+    color: inherit; }
+  /* line 183, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  .entry-meta a:hover, .entry-meta a:active {
+    border-bottom: 1px dotted #fff; }
+
+/* line 157, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.continue_btn {
+  text-align: center; }
+
+/* line 162, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.entry-content a.more-link {
+  font-size: 1.125rem;
+  font-weight: 700;
+  display: inline-block;
+  padding: 1em 1.618em;
+  margin: 2em 0 0.5em 0;
+  background: none;
+  border-top: 0.1875rem solid #e8e1db;
+  border-bottom: 0.1875rem solid #e8e1db;
+  color: #7b6e62; }
+  /* line 168, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .entry-content a.more-link:before {
+    font-family: "FontAwesome";
+    content: "\f0a4";
+    margin-right: 0.5em; }
+  /* line 173, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .entry-content a.more-link:after {
+    font-family: "FontAwesome";
+    content: "\f0a5";
+    margin-left: 0.5em; }
+
+/* line 182, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.entry-footer {
+  text-align: center;
+  margin: 2.617924rem 0 1.618rem 0;
+  line-height: 3em;
+  color: #7b6e62;
+  border-bottom: 0.125rem solid #e8e1db; }
+  /* line 186, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .entry-footer span {
+    margin: 0 0.618em;
+    padding: 0 0.618em;
+    display: inline-block; }
+  /* line 202, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  .entry-footer span {
+    border-top: 0.125rem solid #e8e1db; }
+
+/* line 194, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.comment-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  /* line 198, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .comment-list .comment {
+    padding: 1.618rem;
+    background-color: rgba(221, 193, 174, 0.05);
+    border: 0.0625rem solid rgba(108, 67, 38, 0.05);
+    box-shadow: inset 0 0.125rem 0.3125rem rgba(194, 188, 184, 0.05); }
+
+/* line 206, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.cat-links:before {
+  font-family: "FontAwesome";
+  content: "\f07c";
+  margin-right: 0.5em; }
+
+/* line 212, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.tags-links:before {
+  font-family: "FontAwesome";
+  content: "\f02c";
+  margin-right: 0.5em; }
+
+/* line 218, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.comments-link:before {
+  font-family: "FontAwesome";
+  content: "\f075";
+  margin-right: 0.5em; }
+
+/* line 224, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.edit-link:before {
+  font-family: "FontAwesome";
+  content: "\f040";
+  margin-right: 0.5em; }
+
+/* line 232, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.widget {
+  padding-left: 2.617924rem;
+  padding-right: 2.617924rem;
+  padding-top: 2.617924rem;
+  padding-bottom: 2.617924rem;
+  margin-left: 1.618rem;
+  margin-bottom: 1.618rem;
+  background-color: #ebe8e5;
+  border: 0.0625rem solid #e8e0da;
+  box-shadow: inset 0 0.125rem 0.3125rem rgba(194, 188, 184, 0.1);
+  color: #76624e; }
+  /* line 164, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  .widget a, .widget a:visited, .widget a:active {
+    color: inherit; }
+
+/* line 243, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  /* line 247, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .widget ul li {
+    padding: 1em 0 1em 2em;
+    border-bottom: 0.0625rem solid #e8e0da; }
+    /* line 250, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+    .widget ul li.page_item_has_children, .widget ul li.menu-item-has-children {
+      padding-bottom: 0;
+      border: none; }
+    /* line 255, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+    .widget ul li:before {
+      margin-left: -2em;
+      margin-right: 1em;
+      font-family: "FontAwesome";
+      content: "\f02e"; }
+    /* line 262, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+    .widget ul li li li li {
+      padding-left: 0; }
+  /* line 266, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .widget ul .children li:first-of-type, .widget ul .sub-menu li:first-of-type {
+    margin-top: 1em;
+    border-top: 0.0625rem solid #e8e0da; }
+
+/* line 273, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+input.search-field {
+  box-sizing: border-box;
+  width: 100%; }
+
+/* line 280, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.aboveheader {
+  max-width: 72.433900206rem;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 1.25rem; }
+  /* line 285, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .aboveheader a {
+    margin-right: 0.618em; }
+    /* line 287, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+    .aboveheader a:link, .aboveheader a:visited {
+      opacity: 0.75; }
+    /* line 290, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+    .aboveheader a:hover, .aboveheader a:active {
+      opacity: 1; }
+
+/* line 298, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.abovecontent {
+  max-width: 72.433900206rem;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 0.0625rem solid #DFD8CF;
+  box-shadow: 0 0.0625rem 0.0625rem rgba(33, 19, 4, 0.07); }
+
+/* line 307, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.widget_recent_comments ul li:before {
+  content: "\f075"; }
+
+/* line 313, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.widget_archive ul li:before {
+  content: "\f187"; }
+
+/* line 319, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.widget_categories ul li:before {
+  content: "\f07c"; }
+
+/* line 325, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.widget_pages ul li:before, .widget_nav_menu ul li:before {
+  content: "\f15c"; }
+/* line 329, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.widget_pages ul .children li:before, .widget_pages ul .sub-menu li:before, .widget_nav_menu ul .children li:before, .widget_nav_menu ul .sub-menu li:before {
+  content: "\f101"; }
+/* line 334, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.widget_pages ul .children .children li:before, .widget_pages ul .sub-menu .sub-menu li:before, .widget_nav_menu ul .children .children li:before, .widget_nav_menu ul .sub-menu .sub-menu li:before {
+  content: "\f105"; }
+
+/* line 341, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+.site-footer {
+  padding-top: 1.618em;
+  padding-bottom: 1.618em;
+  max-width: 72.433900206rem;
+  margin: 0 auto; }
+  /* line 220, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  .site-footer a {
+    color: #6d6157; }
+
+@media (max-width: 72.433900206rem) {
+  /* line 74, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    line-height: 1.313em;
+    font-weight: 300; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h1 {
+    font-size: 2.7em;
+    margin: 0.563em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h2 {
+    font-size: 2.025em;
+    margin: 0.625em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h3 {
+    font-size: 1.35em;
+    margin: 1.313em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h4 {
+    font-size: 1.1817em;
+    margin: 1.313em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h5 {
+    font-size: 1.0125em;
+    margin: 1.313em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h6 {
+    font-size: 1em;
+    margin: 0.75em 0; }
+
+  /* line 370, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+    padding-left: 2.617924rem;
+    padding-right: 2.617924rem;
+    padding-top: 1.618rem;
+    padding-bottom: 1.618rem; }
+
+  /* line 377, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .post-thumbnail {
+    margin-top: 1.618rem;
+    margin-right: -2.617924rem;
+    margin-bottom: 1.618rem;
+    margin-left: -2.617924rem; }
+
+  /* line 384, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .entry-title {
+    margin-bottom: 1.618rem; }
+
+  /* line 388, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .site-footer {
+    padding: 1.618em; }
+ }
+
+@media (max-width: 56.25rem) {
+  /* line 397, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .content-area {
+    float: none;
+    margin: 0;
+    width: 100%; }
+
+  /* line 403, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .site-main {
+    margin: 0; }
+
+  /* line 407, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .site-content .widget-area {
+    float: none;
+    overflow: hidden;
+    width: 100%; }
+
+  /* line 413, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .widget {
+    margin-left: 0;
+    margin-bottom: 1.618rem; }
+ }
+
+@media (max-width: 37.5rem) {
+  /* line 74, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    line-height: 1.313em;
+    font-weight: 300; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h1 {
+    font-size: 2.4em;
+    margin: 0.563em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h2 {
+    font-size: 1.8em;
+    margin: 0.625em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h3 {
+    font-size: 1.2em;
+    margin: 1.313em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h4 {
+    font-size: 1.0504em;
+    margin: 1.313em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h5 {
+    font-size: 1em;
+    margin: 1.313em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h6 {
+    font-size: 1em;
+    margin: 0.75em 0; }
+ }
+
+@media (max-width: 25rem) {
+  /* line 74, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    line-height: 1.313em;
+    font-weight: 300; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h1 {
+    font-size: 2.1em;
+    margin: 0.563em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h2 {
+    font-size: 1.575em;
+    margin: 0.625em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h3 {
+    font-size: 1.05em;
+    margin: 1.313em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h4 {
+    font-size: 1em;
+    margin: 1.313em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h5 {
+    font-size: 1em;
+    margin: 1.313em 0; }
+
+  /* line 80, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_vars_mixins */
+  h6 {
+    font-size: 1em;
+    margin: 0.75em 0; }
+
+  /* line 446, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .hentry, .comments-area, .page-header, .site-main .posts-navigation, .site-main .post-navigation, .paging-navigation {
+    padding-left: 1.618rem;
+    padding-right: 1.618rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+
+  /* line 453, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .post-thumbnail {
+    margin-top: 1.618rem;
+    margin-right: -1.618rem;
+    margin-bottom: 1.618rem;
+    margin-left: -1.618rem; }
+
+  /* line 460, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .entry-title {
+    margin-bottom: 1rem; }
+
+  /* line 464, C:/xampp/htdocs/projects/underscores/wordpress/wp-content/themes/my-underscores-theme/sass/custom/custom_styles */
+  .widget {
+    padding-left: 1.618rem;
+    padding-right: 1.618rem;
+    padding-top: 1.618rem;
+    padding-bottom: 1.618rem; }
+ }
+/*# sourceMappingURL=style.css.map */
